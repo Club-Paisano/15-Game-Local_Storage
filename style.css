@@ -1,0 +1,80 @@
+:root {
+  --base1: #343434;
+  --base2: #2d4059;
+  --base3: #ea5455;
+  --base4: #fde9c9;
+  --base5: #900d0d;
+  font-size: 16px;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--base1);
+  color: var(--base4);
+}
+h1 {
+  font-size: 2rem;
+
+}
+h2 {
+  font-size: 1.5rem;
+}
+button {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: var(--base2);
+
+}
+
+
+section.gameSide {
+  width: 49.5%;
+
+  border-right: 1px dotted;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+
+}
+
+.countdown, .round {
+  width: 100%;
+}
+.countdown {
+  position: fixed;
+  top: 30vh;
+  color: var(--base5);
+}
+
+.score {
+  position:fixed;
+  top:0;
+  left:0;
+  text-align: left;
+  color: var(--base5);
+}
+
+div[data-computer] {
+
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  transition: transform 0.3s;
+  transform: translateY(0);
+}
+
+div.inactive {
+  transform: translateY(-200%);;
+}
+
+.buttonSelect {
+  background-color: var(--base3);
+}
